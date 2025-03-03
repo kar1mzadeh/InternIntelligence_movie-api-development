@@ -1,15 +1,13 @@
 package com.zambeyzz.MovieAPIDevelopment.service;
 
-import com.zambeyzz.MovieAPIDevelopment.dto.MovieDTO;
-import com.zambeyzz.MovieAPIDevelopment.entity.Movie;
-
+import com.zambeyzz.MovieAPIDevelopment.dto.MovieRequestDTO;
+import com.zambeyzz.MovieAPIDevelopment.dto.MovieResponseDTO;
 import java.util.List;
 
-
-public interface MovieService{
-    Movie createMovie(Movie movie);
-    List<MovieDTO> getAllMovies();
-MovieDTO getOneMovie(Long id);
-Boolean deleteMovie(Long id);
-Boolean updateMovie(Long id, Movie movie);
+public interface MovieService {
+    MovieResponseDTO createMovie(MovieRequestDTO movieRequestDTO);
+    List<MovieResponseDTO> getAllMovies();
+    MovieResponseDTO getOneMovie(Long id);
+    Boolean deleteMovie(Long id);
+    Boolean updateMovie(Long id, MovieRequestDTO movieRequestDTO);
 }

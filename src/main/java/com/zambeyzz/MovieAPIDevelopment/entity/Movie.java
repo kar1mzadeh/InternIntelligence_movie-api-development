@@ -2,14 +2,11 @@ package com.zambeyzz.MovieAPIDevelopment.entity;
 
 import com.zambeyzz.MovieAPIDevelopment.enums.Genre;
 import com.zambeyzz.MovieAPIDevelopment.exceptions.InvalidReleaseYearException;
-import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import jakarta.validation.constraints.*;
-
-import java.math.BigDecimal;
 
 @Entity
 @Data
